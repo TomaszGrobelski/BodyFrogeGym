@@ -1,0 +1,117 @@
+.bmi-calculator{
+    position: relative;
+    z-index: 0;
+    width: 100vw;
+    height: 600px;
+    &__img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .bmi__box{
+        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.315);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        backdrop-filter: blur(15px);
+        font-size: 3rem;
+        &--h2{
+            font-size: inherit;
+            span{
+                color: rgb(236, 91, 108);
+            }
+        }
+        &--description{
+            max-width: 900px;
+            margin: 10px;
+            font-size: 0.5em;
+            font-family: Montserrat,sans-serif;
+            text-shadow: 1px 1px 4px rgb(236, 91, 108);
+            letter-spacing: 1px;
+            line-height: 32px;
+        }
+        .bmi-input{
+            width: 150px;
+            height: 30px;
+            border-radius: 6px;
+            border: none;
+            margin: 10px;
+            padding-left:10px ;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 0.4em;
+        }
+        .bmi-input:focus{
+            outline: none;
+        }
+        .bmi-input::-webkit-inner-spin-button{
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        &--result-bmi{
+            font-size: 0.6em;
+            .bmi-result{
+                color:rgb(236, 91, 108);
+                text-shadow: 0px 0px 5px  black;
+            }
+        }
+        &--result-weight{
+            font-size: 0.6em;
+            margin-top: 10px;
+            .weight-result{
+                color:rgb(236, 91, 108);
+                text-shadow: 0px 0px 5px  black;
+            }
+        }
+        &--calculate{
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.5em;
+            border: none;
+            border-radius: 8px;
+            margin-top: 10px;
+            cursor: pointer;
+            padding: 5px;
+        }
+        &--calculate:hover{
+            background:rgb(236, 91, 108) ;
+            color: white;
+            animation: colors 500ms;
+        }
+        @keyframes colors {
+            0%{
+                background: white;
+                color: black;
+            }           
+            100%{
+                background: rgb(236, 91, 108);
+                color: white;
+            }
+        }
+    }
+    @media (min-width:500px) and (max-width:750px) {
+        .bmi__box{
+            font-size: 2rem;
+        }
+        
+    }
+    @media (min-width:380px) and (max-width:500px) {
+        .bmi__box{
+            font-size: 1.4rem;
+        }
+        
+    }
+    @media (min-width:0px) and (max-width:380px) {
+        .bmi__box{
+            font-size: 1rem;
+        }
+        
+    }
+
+}

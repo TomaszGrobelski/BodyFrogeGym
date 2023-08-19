@@ -1,0 +1,229 @@
+.header{
+    position: relative;
+    .landingPage{
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+    .head{
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        color: whitesmoke;
+        background: linear-gradient(rgba(0, 0, 0, 0.719),rgba(54, 54, 54, 0.726));
+        &__left{
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            color: inherit;
+            gap: 10px;
+            &--icon{
+                position: relative;
+                left: 10px;
+                top: 5px;
+                width: 50px;
+                height: 50px;
+            }
+            &--name{
+                position: relative;
+                left: 10px;
+            }
+            &--name::after{
+                content: "Increase your strange";
+                position: absolute;
+                font-size: 0.5em;
+                width: 100%;
+                left: 0;
+                bottom: -13px;
+            }
+        }
+        @media (min-width:750px) and (max-width:1000px) {
+            &__left{
+                font-size: 1rem;
+                &--icon{
+                    left: 0px;
+                }
+                &--name{
+                    left: 0px;
+                }
+            }
+        }
+        @media (min-width:500px) and (max-width:750px) {
+            &__left{
+                font-size: 0.9rem;
+            }
+        }
+        @media (min-width:0px) and (max-width:500px) {
+            &__left{
+                font-size: 0.8rem;
+            }
+        }
+        &__center{
+            font-size: 1.1rem;
+            .head__list{
+                display: flex ;
+                list-style: none;
+                gap: 40px;
+                color: inherit;
+                &--li{
+                    position: relative;
+                    cursor: pointer;
+                    letter-spacing: 1px;
+                    
+                }
+                &--li:hover{
+                    color: #ed4503;
+                    
+                }
+                &--li::after{
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 5px;
+                    left: 0;
+                    bottom: -5px;
+                    background: linear-gradient(to right,#ed4503,rgba(0, 0, 0, 0.055)) ;
+                }
+                &--li:hover::after{
+                    width: 100%;
+                    animation: foot 300ms ease-out;
+                }
+                @keyframes foot {
+                    0%{
+                        width: 0%;
+                    }
+                    100%{
+                        width: 100%;
+                    }
+                }
+            }
+            @media (min-width:0px) and (max-width:750px) {
+                .head__list{
+                    display: none ;
+                }
+            }
+            @media (min-width:750px) and (max-width:2220px) {
+                .head__list{
+                    display: flex !important;
+                }
+            }
+
+
+        }
+        @media (min-width:750px) and (max-width:1000px) {
+            &__center{
+                font-size: 0.8rem;
+                .head__list{
+                    gap: 30px;
+                }
+            }
+        }
+        &__right{
+            margin-right: 40px;
+            font-size: 1.1rem;
+            display: flex;
+            gap: 20px;
+            &--profil{
+                padding: 10px;
+            }
+            &--nav{
+                display: none;
+                padding: 10px;
+                background: none;
+                border: 0;
+                cursor: pointer;
+            }
+            @media (min-width:0px) and (max-width:750px) {
+                &--nav{
+                    display: block;
+                }
+            }
+        }
+        &__instagram{
+            position: absolute;
+            right: 60px;
+            top: 150px;
+            transform: scale(3);
+        }
+        &__instagram:hover{
+            transform: scale(3.5);
+        }
+        &__facebook{
+            position: absolute;
+            right: 60px;
+            top: 250px;
+            transform: scale(3);
+        }
+        &__facebook:hover{
+            transform: scale(3.5);
+        }
+        .fa-instagram{
+            background: conic-gradient(#833AB4,#C13584,#E1306C,#FD1D1D,#F56040,#F77737,#FCAF45,#FFDC80,#405DE6,#5851DB,#833AB4);
+            color: white;
+            border-radius: 5px;
+        }
+        .fa-square-facebook{
+            position: relative;
+            color: #4267B2;
+        }
+        .fa-square-facebook::after{
+            content: "";
+            position: absolute;
+            background: white;
+            display: block;
+            width: 90%;
+            height: 80%;
+            left: 1px;
+            top: 2px;
+            z-index: -1;
+            border-radius: 10px;
+
+        }
+       
+    }
+    .title{
+        color: whitesmoke;
+        font-size: 3rem;
+        position: absolute;
+        right: 5vw;
+        bottom: 30vh;
+        width: 450px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-style: italic;
+        text-shadow: 1px 1px 5px #ed4503;
+    }
+    @media (min-width:350px) and (max-width:500px) {
+        .title{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            right: 8%;
+            top: 50%;
+            font-size: 2rem;
+        }
+    }
+    @media (min-width:0px) and (max-width:350px) {
+        .title{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 300px;
+            right: 3%;
+            top: 50%;
+            font-size: 1.9rem;
+        }
+    }
+}
