@@ -6,7 +6,7 @@
 BodyForgeGym to nowoczesne i dynamiczne miejsce, które oferuje możliwość kształtowania swojego ciała oraz zdobywania siły i kondycji. Nasza misja to zapewnienie naszym klientom profesjonalnej obsługi, różnorodnych programów treningowych i przyjaznej atmosfery, która motywuje do osiągania swoich celów fitness.
 
 ## Demo
-[Link do strony BodyForgeGym](https://tomaszgrobelski.github.io/BodyFrogeGym/)
+[Demo strony BodyForgeGym](https://tomaszgrobelski.github.io/BodyFrogeGym/)
 
 ## Technologie:
 - HTML
