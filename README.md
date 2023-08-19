@@ -1,5 +1,4 @@
 # BodyForgeGym
-![Opis obrazka](LogoBodyForgeGym.png) BodyForgeGym 
 
 ![Opis obrazka](BodyForgeGym.png)
 
