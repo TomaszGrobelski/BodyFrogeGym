@@ -26,7 +26,7 @@
             gap: 10px;
             &--icon{
                 position: relative;
-                left: 10px;
+                left: 0px;
                 top: 5px;
                 width: 50px;
                 height: 50px;
@@ -66,17 +66,22 @@
             }
         }
         &__center{
-            font-size: 1.1rem;
+            font-size: 0.8rem;
             .head__list{
                 display: flex ;
+                align-items: center;
                 list-style: none;
-                gap: 40px;
+                //gap: 40px;
                 color: inherit;
                 &--li{
                     position: relative;
                     cursor: pointer;
                     letter-spacing: 1px;
-                    
+                    width: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+  
                 }
                 &--li:hover{
                     color: #ed4503;
@@ -107,11 +112,13 @@
             @media (min-width:0px) and (max-width:750px) {
                 .head__list{
                     display: none ;
+                    
                 }
             }
             @media (min-width:750px) and (max-width:2220px) {
                 .head__list{
                     display: flex !important;
+
                 }
             }
 
@@ -119,14 +126,17 @@
         }
         @media (min-width:750px) and (max-width:1000px) {
             &__center{
-                font-size: 0.8rem;
+                font-size: 0.75rem;
                 .head__list{
-                    gap: 30px;
+                    //gap: 30px;
+                    &--li{
+                        width: 80px;
+                    }
                 }
             }
         }
         &__right{
-            margin-right: 40px;
+            margin-right: 5px;
             font-size: 1.1rem;
             display: flex;
             gap: 20px;
