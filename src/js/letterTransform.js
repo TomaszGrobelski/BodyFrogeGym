@@ -18,7 +18,9 @@ export function letterTransform (){
                 })
                 .join("");  
 
-                if(iterations>=event.target.dataset.value.length) clearInterval(interval)
+                if(iterations>=event.target.dataset.value.length){
+                    clearInterval(interval)
+                }    
                 iterations+= 1;
             },40)
             

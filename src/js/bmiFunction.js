@@ -4,11 +4,12 @@ export function bmiFunction(){
     const resultBMI = document.querySelector(".bmi-result")
     const resultWeight = document.querySelector(".weight-result")
 
-    let BMI = ((inputWeight.value)/((inputHeight.value/100)**2)).toFixed(2)
+    const BMI = ((inputWeight.value)/((inputHeight.value/100)**2)).toFixed(2)
     resultBMI.innerText=BMI;
 
+ 
     let category="";
-    switch (true) {
+    switch (BMI) {
         case BMI < 16:
             category = "Wygłodzenie";
             break;
@@ -30,7 +31,7 @@ export function bmiFunction(){
         case BMI >= 35 && BMI < 40:
             category = "II stopień otyłości";
             break;
-        default:
+        default: // coś skrajnego, jak jako kolejny case
             category = "Otyłość skrajna";
             break;
     }
