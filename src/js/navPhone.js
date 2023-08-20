@@ -5,8 +5,6 @@ export function navPhone() {
     navButton.addEventListener("click", () => {
         navHead.style.display = navHead.style.display === "flex" ? "none" : "flex";
         navHead.style.display = navHead.style.display === "flex" ? navHead.classList.add("head_list-phone") : navHead.classList.remove("head_list-phone");
-        
-        
     });
 
 

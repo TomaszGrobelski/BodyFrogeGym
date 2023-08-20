@@ -22,7 +22,7 @@ export function letterTransform (){
                     clearInterval(interval)
                 }    
                 iterations+= 1;
-            },40)
+            },30)
             
         })
     })
